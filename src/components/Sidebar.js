@@ -1,5 +1,5 @@
 //import "/Users/salamaboulhosn/Documents/web-projects/personal-portfolio-react/src/components/SideBar.css"
-import "../App.css"
+import "./../App.css"
 import {SideBarData} from "./SideBarData"
 
 function SideBar() {
