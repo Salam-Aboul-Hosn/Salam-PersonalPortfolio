@@ -11,5 +11,4 @@ export const SideBarData = [
         title: "Contact",
         link: "/home"
     }
-
-]
+];

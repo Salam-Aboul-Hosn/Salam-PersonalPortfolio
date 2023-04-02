@@ -1,10 +1,10 @@
 /*@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');*/
 
 * {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  outline: 0;
+  margin: 0px;
+  padding: 0px;
+  border: 0px;
+  outline: 0px;
   font-size: 100%;
   vertical-align: baseline;
   background: transparent;
@@ -18,11 +18,13 @@
 body {
   padding: 0;
   margin: 0;
+  background-color: #1D1D1D;
+  
 }
 
 .SideBar {
+    width: 150px;  
     height: 100%;
-    width: 150px;
     background-color: #181818;
 }
 
@@ -30,7 +32,6 @@ body {
     height: auto;
     padding: 0;
     width: 100%;
-    
 }
 
 .SideBarList .row {
@@ -43,10 +44,20 @@ body {
     justify-content: center;
     align-items: center;
     color: white;
-
+    border-bottom: 1px solid #000000;
 }
 
 .SideBarList .row:hover {
     cursor: pointer;
     color: #A666EA;
+}
+
+#h {
+    text-align: left;
+    font-size: 50px;
+    color: white;
+    width: 150px;
+    position: relative;
+    left: 150px;
+    top: -600px;
 }

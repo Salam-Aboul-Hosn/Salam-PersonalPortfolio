@@ -3,6 +3,7 @@ import "./../App.css"
 import {SideBarData} from "./SideBarData"
 
 function SideBar() {
+
     return (
         <nav className="SideBar">
             <ul className ="SideBarList">
