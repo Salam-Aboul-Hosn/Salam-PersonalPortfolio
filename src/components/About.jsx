@@ -1,8 +1,14 @@
 import Aboutcss from "../styles/components/About.module.css"
+import imageOfMe from "../images/Salam.png"
+
 function About() {
     return (
-        <section>
+        <section >
             <h1 className= {Aboutcss.header}>About Me</h1>
+            <div className = {Aboutcss.grid}>
+                <div><p className = {Aboutcss.info}>Hey, I am Salam Aboul Hosn. I am currently a student at <br />University of California, San Diego and I'm studying computer  <br />science. I have a huge passion for full stack development and <br />have a huge drive to be a developer for a company. <br /> <br /> I have been self studying for months and learned HTML, CSS,  <br />Javascript and React in order to learn web devolepment.</p></div>
+                <div><img src= {imageOfMe} alt= "Icon" width="500px" className = {Aboutcss.image}/></div>
+            </div>
         </section>
     );
     

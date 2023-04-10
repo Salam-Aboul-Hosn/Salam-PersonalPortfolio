@@ -1,0 +1,11 @@
+li {
+    font-size: 30px;
+    padding-top: 30%;
+}
+ul {
+    max-width:fit-content;
+    margin-left: 2%;
+    list-style-type: none;
+    margin-top: 5%;
+}
+
