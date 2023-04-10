@@ -1,14 +1,14 @@
 import Navbarcss from "../styles/components/Navbar.module.css"
-
+import icon from "../images/Icon.jpeg"
 function Navbar() {
     return (
-    <header>
-            <h1>logo</h1>
-            <nav>
-                <a href= "/">About</a>
-                <a href= "/">Experience</a>
-                <a href= "/">Projects</a>
-                <a href= "/">Contact</a>
+    <header className = {Navbarcss.header}>
+            <img src= {icon} alt= "Icon" className = {Navbarcss.logo} width="50px"  />
+            <nav className = {Navbarcss.navbar}>
+                <a className = {Navbarcss.anchor} href= "/">About</a>
+                <a className = {Navbarcss.anchor} href= "/">Experience</a>
+                <a className = {Navbarcss.anchor} href= "/">Projects</a>
+                <a className = {Navbarcss.anchor} href= "/">Contact</a>
             </nav>
     </header>
     );
