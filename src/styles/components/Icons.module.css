@@ -7,5 +7,6 @@ ul {
     margin-left: 2%;
     list-style-type: none;
     margin-top: 5%;
+    position: fixed;
 }
 
