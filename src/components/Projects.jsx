@@ -1,6 +1,5 @@
-import Aboutcss from "../styles/components/About.module.css"
+import Projectscss from "../styles/components/Projects.module.css"
 import HeaderLabel from "./HeaderLabel";
-
 function Projects() {
     return (
         <section >
