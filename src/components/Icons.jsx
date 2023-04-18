@@ -8,11 +8,11 @@ import { AiOutlineInstagram } from "react-icons/ai";
 
 function Icons() {
     return (
-    <ul>
-        <a href="https://www.linkedin.com/in/salam-aboul-hosn-678a04257" target="_blank"><li><TbBrandLinkedin /></li></a>
-        <a href="https://github.com/Salam-Aboul-Hosn" target="_blank"><li><VscGithubAlt /></li></a>
-        <a href="https://www.youtube.com/channel/UCpP7lJ7Xby0RaFyU76xj4Wg" target="_blank"><li><SlSocialYoutube /></li></a>
-        <a href="https://www.instagram.com/salam_hosn/" target="_blank"><li><AiOutlineInstagram /></li></a>
+    <ul className={Iconcss.iconList}>
+        <a href="https://www.linkedin.com/in/salam-aboul-hosn-678a04257" target="_blank"><li className={Iconcss.iconItem}><TbBrandLinkedin /></li></a>
+        <a href="https://github.com/Salam-Aboul-Hosn" target="_blank"><li className={Iconcss.iconItem}><VscGithubAlt /></li></a>
+        <a href="https://www.youtube.com/channel/UCpP7lJ7Xby0RaFyU76xj4Wg" target="_blank"><li className={Iconcss.iconItem}><SlSocialYoutube /></li></a>
+        <a href="https://www.instagram.com/salam_hosn/" target="_blank"><li className={Iconcss.iconItem}><AiOutlineInstagram /></li></a>
     </ul>
     );
     

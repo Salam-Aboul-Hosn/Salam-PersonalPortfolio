@@ -8,6 +8,7 @@
     left: 0;
     width: 100%;
     box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.3); /* Add box-shadow for a three-dimensional effect */
+    background-color: #181818;
 
 
 }
@@ -16,6 +17,7 @@
     margin: 15px;
     color: white;
 	background-color: rgb(15, 0, 31);
+    background-color: #181818;
 
 }
 
@@ -23,6 +25,7 @@
     text-align: right;
     margin: 15px;
 	background-color: rgb(15, 0, 31);
+    background-color: #181818;
 
 }
 
@@ -32,6 +35,7 @@
     color: white;
     font-size: 15px;
 	background-color: rgb(15, 0, 31);
+    background-color: #181818;
     font-weight: 300;
 
 }

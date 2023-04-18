@@ -1,8 +1,9 @@
-li {
+.iconItem {
     font-size: 30px;
     padding-top: 30%;
 }
-ul {
+
+.iconList {
     max-width:fit-content;
     margin-left: 2%;
     list-style-type: none;

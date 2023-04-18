@@ -1,5 +1,6 @@
 import Navbarcss from "../styles/components/Navbar.module.css"
-import icon from "../images/Icon.jpeg"
+import icon from "../images/LogoBlack.jpeg"
+
 function Navbar() {
     return (
     <header className = {Navbarcss.header}>
