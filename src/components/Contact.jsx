@@ -4,6 +4,8 @@ function Contact() {
     return (
         <section >
             <HeaderLabel title="Contact Me"/>
+            <p className={Contactcss.contactDescription}>Filler words</p>
+            <a className={Contactcss.sendMessage} href="mailto:salamaboulhosn581@gmail.com">Send Message</a>
         </section>
     );
     
