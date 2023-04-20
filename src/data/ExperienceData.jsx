@@ -1,8 +1,8 @@
 const experienceData = [
     {
-      workplace: "",
+      workplace: "Smart Twigs",
       position: "",
-      duration: [],
+      duration: ["April 2023 - August 2023"],
       description: [
         "",
         "",
@@ -11,9 +11,6 @@ const experienceData = [
       ],
       url: "",
     }, 
-    {
-        
-    }
 ]
 
 export default experienceData;

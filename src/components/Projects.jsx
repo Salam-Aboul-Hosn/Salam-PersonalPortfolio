@@ -2,7 +2,7 @@ import Projectscss from "../styles/components/Projects.module.css"
 import HeaderLabel from "./HeaderLabel";
 function Projects() {
     return (
-        <section >
+        <section id="Projects">
             <HeaderLabel title="Projects"/>
         </section>
     );
