@@ -1,9 +1,8 @@
 import Projectscss from "../styles/components/Projects.module.css"
-import HeaderLabel from "./HeaderLabel";
 function Projects() {
     return (
-        <section id="Projects">
-            <HeaderLabel title="Projects"/>
+        <section className="section" id="Projects">
+            <h1 className="header">Projects</h1>
         </section>
     );
     
