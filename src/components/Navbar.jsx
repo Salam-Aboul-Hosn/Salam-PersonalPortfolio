@@ -23,7 +23,7 @@ function Navbar() {
                 <Link to="About" spy={true} smooth={true} offset={-100} duration={500} className = {Navbarcss.anchor} href= "#src/components/About.jsx">About</Link>
                 <Link to="Experience" spy={true} smooth={true} offset={-100} duration={500} className = {Navbarcss.anchor} href= "/">Experience</Link>
                 <Link to="Projects" spy={true} smooth={true} offset={-100} duration={500} className = {Navbarcss.anchor} href= "/">Projects</Link>
-                <Link to="Contact" spy={true} smooth={true} offset={-100} duration={500} className = {Navbarcss.anchor} href= "/">Contact</Link>
+                <Link to="Contact" spy={true} smooth={true} offset={0} duration={500} className = {Navbarcss.anchor} href= "/">Contact</Link>
             </nav>
     </header>
     );
