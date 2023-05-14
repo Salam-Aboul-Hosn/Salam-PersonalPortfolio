@@ -1,42 +1,49 @@
 import Experiencecss from "../styles/components/Experience.module.css"
-import experienceData from "../data/ExperienceData"
 import Button from '@mui/material/Button';
 import { backdropClasses } from "@mui/material";
 import {useState} from "react"
-
+import { createTheme, ThemeProvider } from "@mui/material/styles";
+import {ExperienceSmartTwig} from "../data/ExperienceData"
+import { ExperienceMicrosoft } from "../data/ExperienceData";
 function Experience() {
 //what youc an do is have a funciton that updates the style. So the orignal style is display none and then when u click the button u do display block and it can work for all of them
-let [jobDisplay, setJobDisplay] = useState(0);
-let [jobDisplay1, setJobDisplay1] = useState();
-    function handleJobAmazon() {
-        setJobDisplay(jobDisplay+1);
-    }
+const [smartTwigJob, setSmartTwigJob] = useState(true);
 
-    function handleJobSmartTwig() {
-        setJobDisplay1(0);
+const [microsoftJob, setMicrosoftJob] = useState(false);
+
+function smartTwigClick() {
+    if(smartTwigJob === true) {
+        return null;
+    } else {
+        setSmartTwigJob(!smartTwigJob)
+        setMicrosoftJob(false)
     }
+}
+
+function microsoftClick() {
+    if(microsoftJob === true) {
+        return null;
+    } else {
+        setMicrosoftJob(!microsoftJob)
+        setSmartTwigJob(false)
+    }
+}
+
     return (
     <section className="section" id="Experience">
         <h1 className="header">Experience</h1>
         <div className= {Experiencecss.container}>
-            <ul className = {Experiencecss.jobButtonList}>
-                <li onClick={handleJobSmartTwig} className={Experiencecss.jobName}><button className={Experiencecss.jobButton}>Smart Twigs</button></li>
-                <li onClick={handleJobAmazon} className={Experiencecss.jobName}><button className={Experiencecss.jobButton}>Amazon</button></li>
-                <Button variant="outlined">Smart Twigs</Button></ul>
-            <ul className={Experiencecss.jobList}>
+            <ul style={{listStyleType: "none"}} className={Experiencecss.jobButtonList}>
+                <li><Button onClick={smartTwigClick} sx={{color: "rgb(135, 65, 216)", borderColor: "rgb(135, 65, 216)"}}  variant="outlined">Smart Twigs</Button></li>
+                <li><Button onClick={microsoftClick} sx={{color: "rgb(135, 65, 216)", borderColor: "rgb(135, 65, 216)"}}  variant="outlined">test</Button></li>
+                <li><Button sx={{color: "rgb(135, 65, 216)", borderColor: "rgb(135, 65, 216)"}}  variant="outlined">Second test</Button></li>
+            </ul>
+            <ul style={{listStyleType: "none"}} className={Experiencecss.jobList}>
                 <div>
-                    <h2 className={Experiencecss.jobNameHeader}>{experienceData[0].workplace}</h2>
-                    <p className={Experiencecss.jobDate}>April 18</p>
-                    <li className={Experiencecss.jobDescription}>I did this and that blaw blaw blaw  and that blaw blaw blaw</li>
-                    <li className={Experiencecss.jobDescription}>I did this and that blaw blaw blaw  and that blaw blaw blaw</li>
-                    <li className={Experiencecss.jobDescription}>I did this and that blaw blaw blaw  and that blaw blaw blaw</li>
-                    <li className={Experiencecss.jobDescription}>I did this and that blaw blaw blaw  and that blaw blaw blaw</li>
-                    <li className={Experiencecss.jobDescription}>I did this and that blaw blaw blaw  and that blaw blaw blaw</li>
+                    {smartTwigJob && <ExperienceSmartTwig />}
                 </div>
                 <div>
-                    <h2 className={Experiencecss.jobNameHeader}>Smart Twigs</h2>
-                    <p className={Experiencecss.jobDate}>April 18</p>
-                    <li className={Experiencecss.jobDescription}>I did this and that blaw blaw blaw</li>
+                    {microsoftJob && <ExperienceMicrosoft  />}
                 </div>
             </ul>
         </div>

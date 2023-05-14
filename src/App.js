@@ -6,6 +6,7 @@ import Icons from "./components/Icons"
 import Experience from "./components/Experience"
 import Projects from "./components/Projects"
 import Contact from "./components/Contact"
+import MoreProjects from "./components/MoreProjects"
 
 import { Scrollbars } from 'react-custom-scrollbars-2';
 
@@ -20,6 +21,7 @@ function App() {
         <About />
         <Experience />
         <Projects />
+        <MoreProjects />
         <Contact />
     </div>
     
