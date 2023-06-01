@@ -3,7 +3,9 @@ import Experiencecss from '../styles/components/Experience.module.css';
 export function ExperienceSmartTwig() {
   return (
     <div>
-      <h2 className={Experiencecss.jobNameHeader}>Smart Twigs</h2>
+      <h2 className={Experiencecss.jobNameHeader}>
+        Smart Twigs Consultancy Group
+      </h2>
       <p className={Experiencecss.jobDate}>April 18 - Present</p>
       <li className={Experiencecss.jobDescription}>
         Developed dynamic and responsive websites using React, TypeScript, and
@@ -23,7 +25,9 @@ export function ExperienceSmartTwig() {
         Worked on a team and communicated with designers/project managers to
         develop large scale web app.
       </li>
-      <li>Built complex forms that were pushed to production</li>
+      <li className={Experiencecss.jobDescription}>
+        Built complex forms that were pushed to production
+      </li>
     </div>
   );
 }
