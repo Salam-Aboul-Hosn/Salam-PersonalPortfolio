@@ -1,13 +1,18 @@
 .iconItem {
-    font-size: 30px;
-    padding-top: 30%;
+  font-size: 30px;
+  padding-top: 30%;
 }
 
 .iconList {
-    max-width:fit-content;
-    margin-left: 2%;
-    list-style-type: none;
-    margin-top: 5%;
-    position: fixed;
+  max-width: fit-content;
+  margin-left: 2%;
+  list-style-type: none;
+  margin-top: 5%;
+  position: fixed;
 }
 
+@media (max-width: 767px) {
+  .iconList {
+    display: none;
+  }
+}
