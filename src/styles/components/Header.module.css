@@ -17,3 +17,15 @@
 .title {
   line-height: 1.2;
 }
+
+@media (max-width: 481px) {
+  .headers {
+    font-size: 1.2rem;
+    text-align: center;
+    margin: 0;
+  }
+  .name {
+    margin-top: 150px;
+    text-align: center;
+  }
+}

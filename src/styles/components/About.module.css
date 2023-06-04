@@ -20,8 +20,18 @@
 @media (max-width: 842px) {
   .grid {
     flex-direction: column;
+    text-align: center;
+  }
+  .flexItemData {
+    padding-left: initial;
+    margin: 15px;
+  }
+
+  .flexItemImg {
+    padding: 0;
   }
 }
+
 .info {
   max-width: fit-content;
   margin: 0 auto;
