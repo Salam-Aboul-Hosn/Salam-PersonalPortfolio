@@ -1,7 +1,9 @@
 import Navbarcss from '../styles/components/Navbar.module.css';
 import icon from '../images/LogoBlack.jpeg';
 import { Link } from 'react-scroll';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
+import { RxHamburgerMenu } from 'react-icons/rx';
+
 function Navbar() {
   const imgStyle = {
     backgroundColor: '#181818',
@@ -14,20 +16,31 @@ function Navbar() {
       behavior: 'smooth',
     });
   };
+  const [navIsActive, setNavIsActive] = useState(true);
 
-  const [active, setActive] = useState('nav__menu');
-  const [icons, setIcons] = useState('nav__toggler');
-  const navToggle = () => {
-    if (active === 'nav__menu') {
-      setActive('nav__menu nav__active');
-    } else setActive('nav__menu');
+  const [iconIsActive, setIconIsActive] = useState(false);
+  const [openMenu, setOpenMenu] = useState(false);
 
-    // Icon Toggler
-    if (icons === 'nav__toggler') {
-      setIcons('nav__toggler toggle');
-    } else setIcons('nav__toggler');
+  useEffect(() => {
+    const handleResize = () => {
+      setNavIsActive(window.innerWidth > 481);
+      setIconIsActive(window.innerWidth < 481);
+    };
+
+    window.addEventListener('resize', handleResize);
+
+    handleResize();
+
+    return () => {
+      window.removeEventListener('resize', handleResize);
+    };
+  }, []);
+
+  const handleIconClick = () => {
+    setOpenMenu(!openMenu);
   };
 
+  console.log(openMenu);
   return (
     <header className={Navbarcss.header}>
       <img
@@ -37,52 +50,111 @@ function Navbar() {
         className={Navbarcss.logo}
         width='50px'
       />
-      <nav className={Navbarcss.navbar}>
-        <Link
-          to='About'
-          spy={true}
-          smooth={true}
-          offset={-100}
-          duration={500}
-          className={Navbarcss.anchor}
-          href='#src/components/About.jsx'
-        >
-          About
-        </Link>
-        <Link
-          to='Experience'
-          spy={true}
-          smooth={true}
-          offset={-100}
-          duration={500}
-          className={Navbarcss.anchor}
-          href='/'
-        >
-          Experience
-        </Link>
-        <Link
-          to='Projects'
-          spy={true}
-          smooth={true}
-          offset={-100}
-          duration={500}
-          className={Navbarcss.anchor}
-          href='/'
-        >
-          Projects
-        </Link>
-        <Link
-          to='Contact'
-          spy={true}
-          smooth={true}
-          offset={0}
-          duration={500}
-          className={Navbarcss.anchor}
-          href='/'
-        >
-          Contact
-        </Link>
-      </nav>
+      {iconIsActive && (
+        <>
+          <RxHamburgerMenu
+            onClick={handleIconClick}
+            style={{ margin: '15px', fontSize: '30px' }}
+          />
+          {openMenu && (
+            <div className={Navbarcss.navClickMenu}>
+              <Link
+                to='About'
+                spy={true}
+                smooth={true}
+                offset={-100}
+                duration={500}
+                className={Navbarcss.anchor}
+                href='#src/components/About.jsx'
+              >
+                About
+              </Link>
+              <Link
+                to='Experience'
+                spy={true}
+                smooth={true}
+                offset={-100}
+                duration={500}
+                className={Navbarcss.anchor}
+                href='/'
+              >
+                Experience
+              </Link>
+              <Link
+                to='Projects'
+                spy={true}
+                smooth={true}
+                offset={-100}
+                duration={500}
+                className={Navbarcss.anchor}
+                href='/'
+              >
+                Projects
+              </Link>
+              <Link
+                to='Contact'
+                spy={true}
+                smooth={true}
+                offset={0}
+                duration={500}
+                className={Navbarcss.anchor}
+                href='/'
+              >
+                Contact
+              </Link>
+            </div>
+          )}
+        </>
+      )}
+
+      {navIsActive && (
+        <nav className={Navbarcss.navbar}>
+          <Link
+            to='About'
+            spy={true}
+            smooth={true}
+            offset={-100}
+            duration={500}
+            className={Navbarcss.anchor}
+            href='#src/components/About.jsx'
+          >
+            About
+          </Link>
+          <Link
+            to='Experience'
+            spy={true}
+            smooth={true}
+            offset={-100}
+            duration={500}
+            className={Navbarcss.anchor}
+            href='/'
+          >
+            Experience
+          </Link>
+          <Link
+            to='Projects'
+            spy={true}
+            smooth={true}
+            offset={-100}
+            duration={500}
+            className={Navbarcss.anchor}
+            href='/'
+          >
+            Projects
+          </Link>
+          <Link
+            to='Contact'
+            spy={true}
+            smooth={true}
+            offset={0}
+            duration={500}
+            className={Navbarcss.anchor}
+            href='/'
+          >
+            Contact
+          </Link>
+        </nav>
+      )}
     </header>
   );
 }

@@ -9,6 +9,7 @@
   width: 100%;
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.3); /* Add box-shadow for a three-dimensional effect */
   background-color: #181818;
+  z-index: 1;
 }
 
 .logo {
@@ -37,4 +38,27 @@
 }
 .anchor:hover {
   color: rgb(135, 65, 216);
+}
+
+.nav__toggler {
+  display: block;
+  cursor: pointer;
+}
+.navClickMenu {
+  position: fixed;
+  display: flex;
+  width: 50vw;
+  background: rgb(0, 33, 65);
+  flex-direction: column;
+  transition: 0.5s ease-in;
+
+  text-align: center;
+  justify-content: center;
+  gap: 15px;
+  top: 0;
+  right: 0;
+  height: 100vh;
+}
+.navClickMenu .anchor {
+  background-color: transparent;
 }
