@@ -39,7 +39,9 @@ function Navbar() {
   const handleIconClick = () => {
     setOpenMenu(!openMenu);
   };
-
+  const handleMenuClick = () => {
+    setOpenMenu(!openMenu);
+  };
   console.log(openMenu);
   return (
     <header className={Navbarcss.header}>
@@ -59,6 +61,7 @@ function Navbar() {
           {openMenu && (
             <div className={Navbarcss.navClickMenu}>
               <Link
+                onClick={handleMenuClick}
                 to='About'
                 spy={true}
                 smooth={true}
@@ -70,6 +73,7 @@ function Navbar() {
                 About
               </Link>
               <Link
+                onClick={handleMenuClick}
                 to='Experience'
                 spy={true}
                 smooth={true}
@@ -81,6 +85,7 @@ function Navbar() {
                 Experience
               </Link>
               <Link
+                onClick={handleMenuClick}
                 to='Projects'
                 spy={true}
                 smooth={true}
@@ -92,6 +97,7 @@ function Navbar() {
                 Projects
               </Link>
               <Link
+                onClick={handleMenuClick}
                 to='Contact'
                 spy={true}
                 smooth={true}

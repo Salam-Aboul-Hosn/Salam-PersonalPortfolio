@@ -48,7 +48,6 @@
   position: fixed;
   display: flex;
   width: 50vw;
-  background: rgb(0, 33, 65);
   flex-direction: column;
   transition: 0.5s ease-in;
 
@@ -58,6 +57,7 @@
   top: 0;
   right: 0;
   height: 100vh;
+  background-color: #27272a;
 }
 .navClickMenu .anchor {
   background-color: transparent;
