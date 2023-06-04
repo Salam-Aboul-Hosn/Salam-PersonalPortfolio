@@ -17,7 +17,9 @@
     position: relative;
   }
 } */
-
+.iconItem:hover {
+  transform: translateY(-5px);
+}
 @media (max-width: 767px) {
   .iconItem {
     font-size: 21px; /* Reset to default value */
