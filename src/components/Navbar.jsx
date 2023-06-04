@@ -1,7 +1,7 @@
 import Navbarcss from '../styles/components/Navbar.module.css';
 import icon from '../images/LogoBlack.jpeg';
 import { Link } from 'react-scroll';
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useRef } from 'react';
 import { RxHamburgerMenu } from 'react-icons/rx';
 
 function Navbar() {
@@ -16,10 +16,11 @@ function Navbar() {
       behavior: 'smooth',
     });
   };
-  const [navIsActive, setNavIsActive] = useState(true);
 
+  const [navIsActive, setNavIsActive] = useState(true);
   const [iconIsActive, setIconIsActive] = useState(false);
   const [openMenu, setOpenMenu] = useState(false);
+  const menuRef = useRef(null);
 
   useEffect(() => {
     const handleResize = () => {
@@ -39,10 +40,23 @@ function Navbar() {
   const handleIconClick = () => {
     setOpenMenu(!openMenu);
   };
-  const handleMenuClick = () => {
-    setOpenMenu(!openMenu);
-  };
+
+  useEffect(() => {
+    const handleClickOutside = (event) => {
+      if (menuRef.current && !menuRef.current.contains(event.target)) {
+        setOpenMenu(false);
+      }
+    };
+
+    document.addEventListener('mousedown', handleClickOutside);
+
+    return () => {
+      document.removeEventListener('mousedown', handleClickOutside);
+    };
+  }, []);
+
   console.log(openMenu);
+
   return (
     <header className={Navbarcss.header}>
       <img
@@ -52,6 +66,7 @@ function Navbar() {
         className={Navbarcss.logo}
         width='50px'
       />
+
       {iconIsActive && (
         <>
           <RxHamburgerMenu
@@ -59,9 +74,9 @@ function Navbar() {
             style={{ margin: '15px', fontSize: '30px' }}
           />
           {openMenu && (
-            <div className={Navbarcss.navClickMenu}>
+            <div ref={menuRef} className={Navbarcss.navClickMenu}>
               <Link
-                onClick={handleMenuClick}
+                onClick={handleIconClick}
                 to='About'
                 spy={true}
                 smooth={true}
@@ -73,7 +88,7 @@ function Navbar() {
                 About
               </Link>
               <Link
-                onClick={handleMenuClick}
+                onClick={handleIconClick}
                 to='Experience'
                 spy={true}
                 smooth={true}
@@ -85,7 +100,7 @@ function Navbar() {
                 Experience
               </Link>
               <Link
-                onClick={handleMenuClick}
+                onClick={handleIconClick}
                 to='Projects'
                 spy={true}
                 smooth={true}
@@ -97,7 +112,7 @@ function Navbar() {
                 Projects
               </Link>
               <Link
-                onClick={handleMenuClick}
+                onClick={handleIconClick}
                 to='Contact'
                 spy={true}
                 smooth={true}
@@ -164,4 +179,5 @@ function Navbar() {
     </header>
   );
 }
+
 export default Navbar;
