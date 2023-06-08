@@ -13,7 +13,7 @@ function About() {
             Computer Science. I have a huge passion for full stack development
             and have a huge drive to be a developer for a company. I've been
             self studying for months and learned HTML, CSS, Javascript and React
-            in order to learn front end web devolepment. In addition, I'm also
+            in order to learn front end web development. In addition, I'm also
             studying Node, Express, and data bases in order to become a full
             stack developer.
           </p>
