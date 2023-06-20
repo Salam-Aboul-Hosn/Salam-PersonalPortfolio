@@ -28,7 +28,7 @@ function Contact() {
       <div>
         <h1 className={Contactcss.headerContact}>Contact Me</h1>
         <p className={Contactcss.contactDescription}>
-          Whether it's for a job or bussiness opportunity, a question, my inbox
+          Whether it's for a job or business opportunity, a question, my inbox
           is always open.
         </p>
         <div className={Contactcss.container}>
@@ -50,7 +50,6 @@ function Contact() {
             }}
           />
         )}
-        {/*<p className={Contactcss.footer}>good work</p>*/}
       </div>
     </section>
   );
