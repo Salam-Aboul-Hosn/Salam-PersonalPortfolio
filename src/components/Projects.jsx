@@ -1,12 +1,11 @@
 import Projectscss from '../styles/components/Projects.module.css';
 import GameHub from '../images/GameHub.png';
 import { styled } from '@mui/material/styles';
-import Box from '@mui/material/Box';
 import Paper from '@mui/material/Paper';
-import Grid from '@mui/material/Unstable_Grid2';
 import ProjectCard from './ProjectCard';
 import ToDoList from '../images/ToDoList.png';
 import FoodStore from '../images/FoodStore.png';
+import Hoobank from '../images/Hoobank.png';
 
 const Item = styled(Paper)(({ theme }) => ({
   ...theme.typography.body2,
@@ -37,13 +36,16 @@ function Projects() {
         <ProjectCard
           image={ToDoList}
           title='To Do List'
-          description='Created multiple reusable components and imported/exported them in order to develop the UI.
-           Utilized useState Hook to store list items into an array and update the state of the UI using onClick Events.
-           Incorporated Data Structures such as Map to add items and Filter to delete items from the array.
-           Passed data from parent components to child components by utilizing Props.
-           Had clean and readable code by using the ES6 Spread Operator.'
+          description='Allows users to add and delete daily tasks by storing them into an array. Utilized useState Hook to update the state of the UI using onClick Events. Incorporated Data Structures such as Map to add tasks and Filter to delete tasks from the array. Had clean and readable code by using the ES6 Spread Operator. Deployed to vercel increasing my productivity by 20% .'
           code='https://github.com/Salam-Aboul-Hosn/todo-list-app1'
           website='https://todo-list-app1.vercel.app/'
+        />
+        <ProjectCard
+          image={Hoobank}
+          title='HooBank'
+          description='Created a landing page for users to join a banking system (prototype). Developed multiple reusable Components and imported/exported them in order to develop the UI. Passed data from parent components to child components by utilizing Props. Fully responsive modern user interface with css animations for sidebar on mobile devices.'
+          code='https://github.com/Salam-Aboul-Hosn/bank-project'
+          website='https://bank-project-five.vercel.app/'
         />
         <ProjectCard
           image={FoodStore}
