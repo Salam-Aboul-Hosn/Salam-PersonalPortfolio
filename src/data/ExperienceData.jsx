@@ -6,27 +6,22 @@ export function ExperienceSmartTwig() {
       <h2 className={Experiencecss.jobNameHeader}>
         Smart Twigs Consultancy Group
       </h2>
-      <p className={Experiencecss.jobDate}>April 18 - Present</p>
+      <p className={Experiencecss.jobDate}>April - August 2023</p>
       <li className={Experiencecss.jobDescription}>
-        Developed dynamic and responsive websites using React, TypeScript, and
-        Styled Components.
+        Worked on the front-end development team using React & TypeScript to
+        build a user-friendly platform for non-profits and individuals to
+        increase awareness of current social issues.
       </li>
       <li className={Experiencecss.jobDescription}>
-        Created reusable components increasing developer speed by 10%.
+        Created custom components increasing developer speed by 50%.
       </li>
       <li className={Experiencecss.jobDescription}>
-        Worked with REST APIs to retrieve and display data from databases.
+        Built complex forms in order for users to create organization, programs,
+        and projects.{' '}
       </li>
       <li className={Experiencecss.jobDescription}>
-        Agile Project Workflow with daily stand up meetings to accelerate
-        development using Jira Software.
-      </li>
-      <li className={Experiencecss.jobDescription}>
-        Worked on a team and communicated with designers/project managers to
-        develop large scale web app.
-      </li>
-      <li className={Experiencecss.jobDescription}>
-        Built complex forms that were pushed to production
+        Used Postman and worked with Rest APIs to save form data and send it to
+        the back end
       </li>
     </div>
   );
