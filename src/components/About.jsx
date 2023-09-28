@@ -8,14 +8,17 @@ function About() {
       <div className={Aboutcss.grid}>
         <div className={Aboutcss.flexItemData}>
           <p className={Aboutcss.info}>
-            Hey, my name is Salam Aboul Hosn. I'm currently a student at
-            University of California, San Diego and studying Mathematics and
-            Computer Science. I have a huge passion for full stack development
-            and have a huge drive to be a developer for a company. I've been
-            self studying for months and learned HTML, CSS, Javascript and React
-            in order to learn front end web development. In addition, I'm also
-            studying Node, Express, and data bases in order to become a full
-            stack developer.
+            Hey, my name is Salam Aboul Hosn. I am currently a third year
+            student at the University Of California, San Diego studying
+            Mathematics and Computer Science. I have taken a variety of courses
+            such as advanced data structures, design & analysis of algorithms,
+            and object oriented programming allowing me to learn Java, C, and
+            C++. I am an extremely self motivated individual and self taught
+            HTML, CSS, Javascript, React, Express, and MongoDB by taking online
+            courses with certification and building projects. I have 5 months
+            worth of professional experience as a front end developer in React &
+            Typescript for Smart Twigs Consultancy Group building a full stack
+            web app.
           </p>
         </div>
         <div className={Aboutcss.flexItemImg}>
