@@ -1,6 +1,5 @@
 import Aboutcss from '../styles/components/About.module.css';
-import imageOfMe from '../images/self.png';
-import Header from './Header';
+import imageOfMe from '../images/self.jpeg';
 function About() {
   return (
     <section className='section' id='About'>
@@ -29,7 +28,7 @@ function About() {
             <img
               src={imageOfMe}
               alt='Icon'
-              width='215px'
+              width='300px'
               className={Aboutcss.image}
             />
           </a>
