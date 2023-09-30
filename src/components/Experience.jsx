@@ -26,24 +26,10 @@ function Experience() {
           style={{ listStyleType: 'none' }}
           className={Experiencecss.jobButtonList}
         >
-          <li>
-            <Button
-              onClick={smartTwigClick}
-              sx={{
-                color: 'rgb(135, 65, 216)',
-                borderColor: 'rgb(135, 65, 216)',
-              }}
-              variant='outlined'
-            >
-              Smart Twigs
-            </Button>
-          </li>
+          <button className={Experiencecss.btn}>Smart Twigs</button>
         </ul>
-        <ul
-          style={{ listStyleType: 'none', maxWidth: '36rem' }}
-          className={Experiencecss.jobList}
-        >
-          <div>{smartTwigJob && <ExperienceSmartTwig />}</div>
+        <ul style={{ maxWidth: '36rem' }} className={Experiencecss.jobList}>
+          {smartTwigJob && <ExperienceSmartTwig />}
         </ul>
       </div>
     </section>

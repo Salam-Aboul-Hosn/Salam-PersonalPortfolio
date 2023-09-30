@@ -11,13 +11,17 @@ function About() {
             student at the University Of California, San Diego studying
             Mathematics and Computer Science. I have taken a variety of courses
             such as advanced data structures, design & analysis of algorithms,
-            and object oriented programming allowing me to learn Java, C, and
-            C++. I am an extremely self motivated individual and self taught
-            HTML, CSS, Javascript, React, Express, and MongoDB by taking online
-            courses with certification and building projects. I have 5 months
-            worth of professional experience as a front end developer in React &
-            Typescript for Smart Twigs Consultancy Group building a full stack
-            web app.
+            and object oriented programming allowing me to learn{' '}
+            <strong className={Aboutcss.word}>Java, C, and C++.</strong> I am an
+            extremely self motivated individual and self taught{' '}
+            <strong className={Aboutcss.word}>
+              HTML, CSS, Javascript, React, Express
+            </strong>
+            , and <strong className={Aboutcss.word}>MongoDB </strong>
+            by taking online courses with certification and building projects. I
+            have 5 months worth of professional experience as a front end
+            developer in React & Typescript for Smart Twigs Consultancy Group
+            building a full stack web app.
           </p>
         </div>
         <div className={Aboutcss.flexItemImg}>

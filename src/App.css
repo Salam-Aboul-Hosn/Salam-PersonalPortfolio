@@ -2,8 +2,6 @@
   padding: 0;
   margin: 0;
   font-family: 'Open Sans', sans-serif;
-  /*background-color: #181818;*/
-  /*background-color: rgb(15, 0, 31);*/
   color: white;
 }
 
@@ -19,13 +17,5 @@ body {
 }
 
 .section {
-  /* height: 100vh; */
   min-height: 90vh;
 }
-
-/*.section + div {
-	height: 100vh;
-}
-
-
-/*can maybe wrap the app.js with a div and have the home page 100vh and then do position relative and put the icons on the bottom left */

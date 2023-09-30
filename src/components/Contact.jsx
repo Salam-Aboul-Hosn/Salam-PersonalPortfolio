@@ -10,13 +10,10 @@ function Contact() {
       setIsSmallScreen(window.innerWidth < 767); // Change the pixel value as per your requirement
     };
 
-    // Add event listener for window resize
     window.addEventListener('resize', handleResize);
 
-    // Call the resize handler initially to check the screen size on component mount
     handleResize();
 
-    // Clean up the event listener when the component unmounts
     return () => {
       window.removeEventListener('resize', handleResize);
     };
