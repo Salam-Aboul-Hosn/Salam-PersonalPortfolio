@@ -21,7 +21,7 @@ export function ExperienceSmartTwig() {
       </li>
       <li className={Experiencecss.jobDescription}>
         Used Postman and worked with Rest APIs to save form data and send it to
-        the back end
+        the back end.
       </li>
     </div>
   );
