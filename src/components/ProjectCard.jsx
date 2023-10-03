@@ -8,7 +8,13 @@ import Typography from '@mui/material/Typography';
 import { AiFillGithub } from 'react-icons/ai';
 import { HiOutlineExternalLink } from 'react-icons/hi';
 
-export default function ProjectCard(props) {
+export default function ProjectCard({
+  image,
+  title,
+  website,
+  description,
+  code,
+}) {
   return (
     <Card
       sx={{
@@ -21,11 +27,7 @@ export default function ProjectCard(props) {
         borderRadius: '25px',
       }}
     >
-      <CardMedia
-        sx={{ height: 220 }}
-        image={props.image}
-        title='green iguana'
-      />
+      <CardMedia sx={{ height: 220 }} image={image} title='green iguana' />
       <CardContent>
         <Typography
           gutterBottom
@@ -38,7 +40,7 @@ export default function ProjectCard(props) {
             fontSize: '28px',
           }}
         >
-          {props.title}
+          {title}
           <div>
             <Button size='small' sx={{ minWidth: '0px' }}>
               <a
@@ -49,24 +51,26 @@ export default function ProjectCard(props) {
                   fontSize: '28px',
                 }}
                 target='blank'
-                href={props.code}
+                href={code}
               >
                 <AiFillGithub />
               </a>
             </Button>
             <Button size='small' sx={{ minWidth: '0px' }}>
-              <a
-                style={{
-                  all: 'initial',
-                  color: '#CF9FFF',
-                  cursor: 'pointer',
-                  fontSize: '28px',
-                }}
-                target='blank'
-                href={props.website}
-              >
-                <HiOutlineExternalLink />
-              </a>
+              {website && (
+                <a
+                  style={{
+                    all: 'initial',
+                    color: '#CF9FFF',
+                    cursor: 'pointer',
+                    fontSize: '28px',
+                  }}
+                  target='blank'
+                  href={website}
+                >
+                  <HiOutlineExternalLink />
+                </a>
+              )}
             </Button>{' '}
           </div>
         </Typography>
@@ -76,7 +80,7 @@ export default function ProjectCard(props) {
           color='white'
           sx={{ minWidth: '50px', fontSize: '18px', opacity: 0.75 }}
         >
-          {props.description}
+          {description}
         </Typography>
       </CardContent>
     </Card>

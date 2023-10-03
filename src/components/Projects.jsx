@@ -1,12 +1,10 @@
 import Projectscss from '../styles/components/Projects.module.css';
 import GameHub from '../images/GameHub.png';
-import { styled } from '@mui/material/styles';
-import Paper from '@mui/material/Paper';
 import ProjectCard from './ProjectCard';
 import ToDoList from '../images/ToDoList.png';
 import FoodStore from '../images/FoodStore.png';
 import Hoobank from '../images/Hoobank.png';
-import { AiFillGithub } from 'react-icons/ai';
+import Bookstore from '../images/Bookstore.png';
 
 function Projects() {
   return (
@@ -14,6 +12,16 @@ function Projects() {
       <h1 className='header'>Projects</h1>
 
       <div className={Projectscss.allProjectContainer}>
+        <ProjectCard
+          image={Bookstore}
+          title='Book Store'
+          description='Developed front-end with React and server with Express allowing users to create, read, update & delete books. 
+          Integrated MongoDB as the database and used Mongoose to define data models and a schema to store book
+          information efficiently. Leveraged Tailwind for a responsive UI and Axios for data fetching with a Node back-end.'
+          code='https://github.com/Salam-Aboul-Hosn/BookStore'
+          website=''
+        />
+
         <ProjectCard
           image={GameHub}
           title='Game Hub'
