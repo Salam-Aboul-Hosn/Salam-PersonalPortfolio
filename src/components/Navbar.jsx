@@ -3,13 +3,9 @@ import icon from '../images/LogoBlack.jpeg';
 import { Link } from 'react-scroll';
 import { useState, useEffect, useRef } from 'react';
 import { RxHamburgerMenu } from 'react-icons/rx';
-
+import Pdf from '../images/resume-portfolio.pdf';
+import Experiencecss from '../styles/components/Experience.module.css';
 function Navbar() {
-  const imgStyle = {
-    backgroundColor: '#181818',
-    cursor: 'pointer',
-  };
-
   const handleLogoClick = () => {
     window.scrollTo({
       top: 0,
@@ -24,8 +20,8 @@ function Navbar() {
 
   useEffect(() => {
     const handleResize = () => {
-      setNavIsActive(window.innerWidth > 481);
-      setIconIsActive(window.innerWidth < 481);
+      setNavIsActive(window.innerWidth > 548);
+      setIconIsActive(window.innerWidth < 548);
     };
 
     window.addEventListener('resize', handleResize);
@@ -54,8 +50,6 @@ function Navbar() {
       document.removeEventListener('mousedown', handleClickOutside);
     };
   }, []);
-
-  console.log(openMenu);
 
   return (
     <header className={Navbarcss.header}>
@@ -123,6 +117,28 @@ function Navbar() {
               >
                 Contact
               </Link>
+              {/* <a
+                href={Pdf}
+                className={Navbarcss.anchor}
+                style={{
+                  position: 'relative',
+                  padding: '6px 16px',
+                  fontSize: '18px',
+                  textDecoration: 'none',
+                  color: 'rgb(135, 65, 216)',
+                  backgroundColor: 'transprent',
+                  border: '1px solid rgb(135, 65,216)',
+                  transition: '0.8s',
+                  overflow: 'hidden',
+                  zIndex: '1',
+                  cursor: 'ponter',
+                  borderRadius: '10px',
+                  alignSelf: 'center',
+                  maxWidth: '80px',
+                }}
+              >
+                Resume
+              </a> */}
             </div>
           )}
         </>
@@ -174,6 +190,26 @@ function Navbar() {
           >
             Contact
           </Link>
+          <a
+            href={Pdf}
+            className={Navbarcss.anchor}
+            style={{
+              position: 'relative',
+              padding: '6px 16px',
+              fontSize: '18px',
+              textDecoration: 'none',
+              color: 'rgb(135, 65, 216)',
+              backgroundColor: 'transprent',
+              border: '1px solid rgb(135, 65,216)',
+              transition: '0.8s',
+              overflow: 'hidden',
+              zIndex: '1',
+              cursor: 'ponter',
+              borderRadius: '10px',
+            }}
+          >
+            Resume
+          </a>
         </nav>
       )}
     </header>
