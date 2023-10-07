@@ -207,6 +207,7 @@ function Navbar() {
               cursor: 'ponter',
               borderRadius: '10px',
             }}
+            target='_blank'
           >
             Resume
           </a>
