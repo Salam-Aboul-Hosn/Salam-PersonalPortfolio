@@ -12,10 +12,14 @@ function About() {
             Mathematics and Computer Science. I have taken a variety of courses
             such as advanced data structures, design & analysis of algorithms,
             and object oriented programming allowing me to learn{' '}
-            <strong className={Aboutcss.word}>Java, C, and C++.</strong> I am an
-            extremely self motivated individual and self taught{' '}
             <strong className={Aboutcss.word}>
-              HTML, CSS, Javascript, React, Express
+              Java<span>,</span> C<span>, </span>
+              <span style={{ fontWeight: 300 }}>and</span> C++.
+            </strong>{' '}
+            I am an extremely self motivated individual and self taught{' '}
+            <strong className={Aboutcss.word}>
+              HTML<span>,</span> CSS<span>,</span> Javascript<span>,</span>{' '}
+              React<span>,</span> Express
             </strong>
             , and <strong className={Aboutcss.word}>MongoDB </strong>
             by taking online courses with certification and building projects. I
