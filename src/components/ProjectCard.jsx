@@ -7,7 +7,7 @@ import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
 import { AiFillGithub } from 'react-icons/ai';
 import { HiOutlineExternalLink } from 'react-icons/hi';
-
+import { useEffect, useState } from 'react';
 export default function ProjectCard({
   image,
   title,
@@ -15,15 +15,30 @@ export default function ProjectCard({
   description,
   code,
 }) {
+  const [isPhone, setIsPhone] = useState(false);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setIsPhone(window.innerWidth < 548);
+    };
+
+    window.addEventListener('resize', handleResize);
+
+    handleResize();
+
+    return () => {
+      window.removeEventListener('resize', handleResize);
+    };
+  }, []);
   return (
     <Card
       sx={{
         maxWidth: 345,
         backgroundColor: '#282828',
-        minWidth: '400px',
-        minHeight: '600px',
+        minWidth: `${isPhone ? '350px' : '400px'}`,
+        minHeight: `${isPhone ? '650px' : '600px'}`,
         maxHeight: '600px',
-        marginLeft: '15px',
+        marginLeft: `${isPhone ? '0px' : '15px'}`,
         borderRadius: '25px',
       }}
     >
