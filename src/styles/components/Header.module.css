@@ -14,10 +14,41 @@
   color: rgb(135, 65, 216);
   font-weight: 100;
 }
-.title {
+
+.titleSmall {
   line-height: 1.2;
 }
+.title {
+  line-height: 1.2;
+  width: fit-content;
+}
 
+.bounceContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.bounceLetter {
+  transition: transform 0.4s;
+}
+
+.bounceLetter:hover {
+  animation: bounce 0.2s ease;
+  color: rgb(192 132 252);
+}
+
+@keyframes bounce {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.space {
+  margin-right: 15px;
+}
 @media (max-width: 481px) {
   .headers {
     font-size: 1.2rem;
@@ -27,5 +58,14 @@
   .name {
     margin-top: 150px;
     text-align: center;
+  }
+  .title {
+    width: auto;
+  }
+  .bounceContainer {
+    display: block;
+  }
+  .space {
+    margin-right: 10px;
   }
 }
