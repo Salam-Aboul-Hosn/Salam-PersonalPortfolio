@@ -48,6 +48,9 @@
 }
 .space {
   margin-right: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 @media (max-width: 481px) {
   .headers {
@@ -67,5 +70,6 @@
   }
   .space {
     margin-right: 10px;
+    display: inline-block;
   }
 }
