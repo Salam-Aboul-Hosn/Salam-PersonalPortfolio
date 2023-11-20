@@ -18,13 +18,13 @@ function About() {
             </strong>{' '}
             I am an extremely self motivated individual and self taught{' '}
             <strong className={Aboutcss.word}>
-              HTML<span>,</span> CSS<span>,</span> Javascript<span>,</span>{' '}
+              HTML<span>,</span> CSS<span>,</span> JavaScript<span>,</span>{' '}
               React<span>,</span> Express
             </strong>
             , and <strong className={Aboutcss.word}>MongoDB </strong>
             by taking online courses with certification and building projects. I
             have 5 months worth of professional experience as a front end
-            developer in React & Typescript for Smart Twigs Consultancy Group
+            developer in React & TypeScript for Smart Twigs Consultancy Group
             building a full stack web app.
           </p>
         </div>

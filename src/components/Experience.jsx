@@ -4,19 +4,16 @@ import { backdropClasses } from '@mui/material';
 import { useState } from 'react';
 import { createTheme, ThemeProvider } from '@mui/material/styles';
 import { ExperienceSmartTwig } from '../data/ExperienceData';
-import { ExperienceMicrosoft } from '../data/ExperienceData';
+import { ExperiencePending } from '../data/ExperienceData';
 function Experience() {
   //what youc an do is have a funciton that updates the style. So the orignal style is display none and then when u click the button u do display block and it can work for all of them
-  const [smartTwigJob, setSmartTwigJob] = useState(true);
+  const [job, setJob] = useState('mymicrojourney');
 
-  const [microsoftJob, setMicrosoftJob] = useState(false);
-
-  function smartTwigClick() {
-    if (smartTwigJob === true) {
-      return null;
-    } else {
-      setSmartTwigJob(!smartTwigJob);
-    }
+  function handleSmartClick() {
+    setJob('smart');
+  }
+  function handlePendingClick() {
+    setJob('mymicrojourney');
   }
   return (
     <section className='section' id='Experience'>
@@ -26,10 +23,16 @@ function Experience() {
           style={{ listStyleType: 'none' }}
           className={Experiencecss.jobButtonList}
         >
-          <button className={Experiencecss.btn}>Smart Twigs</button>
+          <button onClick={handlePendingClick} className={Experiencecss.btn}>
+            MyMicrojourney
+          </button>
+          <button onClick={handleSmartClick} className={Experiencecss.btn}>
+            Smart Twigs
+          </button>
         </ul>
         <ul style={{ maxWidth: '36rem' }} className={Experiencecss.jobList}>
-          {smartTwigJob && <ExperienceSmartTwig />}
+          {job == 'smart' && <ExperienceSmartTwig />}
+          {job == 'mymicrojourney' && <ExperiencePending />}
         </ul>
       </div>
     </section>
