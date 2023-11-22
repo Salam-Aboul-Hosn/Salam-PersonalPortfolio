@@ -8,12 +8,14 @@ import { ExperiencePending } from '../data/ExperienceData';
 function Experience() {
   //what youc an do is have a funciton that updates the style. So the orignal style is display none and then when u click the button u do display block and it can work for all of them
   const [job, setJob] = useState('mymicrojourney');
-
+  const [start, setStart] = useState('start');
   function handleSmartClick() {
     setJob('smart');
+    setStart('');
   }
-  function handlePendingClick() {
+  function handleMicroClick() {
     setJob('mymicrojourney');
+    setStart('');
   }
   return (
     <section className='section' id='Experience'>
@@ -23,9 +25,14 @@ function Experience() {
           style={{ listStyleType: 'none' }}
           className={Experiencecss.jobButtonList}
         >
-          <button onClick={handlePendingClick} className={Experiencecss.btn}>
-            MyMicrojourney
-          </button>
+          {start ? (
+            <button className={Experiencecss.btnFocused}>MyMicrojourney</button>
+          ) : (
+            <button onClick={handleMicroClick} className={Experiencecss.btn}>
+              MyMicrojourney
+            </button>
+          )}
+
           <button onClick={handleSmartClick} className={Experiencecss.btn}>
             Smart Twigs
           </button>
