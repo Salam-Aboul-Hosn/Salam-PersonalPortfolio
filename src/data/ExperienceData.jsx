@@ -31,23 +31,19 @@ export function ExperiencePending() {
       <h2 className={Experiencecss.jobNameHeader}>MyMicrojourney</h2>
       <p className={Experiencecss.jobDate}>Oct - Present</p>
       <li className={Experiencecss.jobDescription}>
-        Full stack developer building a B2B web app that facilitates SMB
-        recruitment using MERN stack.
+        Built a Rest API using Java Spring Boot and utilized MySQL to store user
+        data.
       </li>
       <li className={Experiencecss.jobDescription}>
-        Developed front-end using React to create a working prototype for
-        potential investors.
+        Used Spring Security to hash passwords increasing security by 70%.
       </li>
       <li className={Experiencecss.jobDescription}>
-        Built API endpoints using Express and stored user data in MongoDB
-        database for optimal scalability.
+        Developed landing pages, components, and forms using Next.js completing
+        100% of the front end.
       </li>
       <li className={Experiencecss.jobDescription}>
-        Transformed project requirements into wireframes using Figma resulting
-        in an enhanced UI/UX design.
-      </li>
-      <li className={Experiencecss.jobDescription}>
-        Used express middleware to encrypt passwords increasing security by 70%.
+        Created microservices, controllers, and data models to fulfill back-end
+        functionality.
       </li>
     </div>
   );

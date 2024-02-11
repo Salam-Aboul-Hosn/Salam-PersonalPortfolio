@@ -9,6 +9,7 @@ function Experience() {
   //what youc an do is have a funciton that updates the style. So the orignal style is display none and then when u click the button u do display block and it can work for all of them
   const [job, setJob] = useState('mymicrojourney');
   const [start, setStart] = useState('start');
+
   function handleSmartClick() {
     setJob('smart');
     setStart('');
@@ -25,7 +26,7 @@ function Experience() {
           style={{ listStyleType: 'none' }}
           className={Experiencecss.jobButtonList}
         >
-          {start ? (
+          {job == 'mymicrojourney' ? (
             <button className={Experiencecss.btnFocused}>MyMicrojourney</button>
           ) : (
             <button onClick={handleMicroClick} className={Experiencecss.btn}>
@@ -33,9 +34,18 @@ function Experience() {
             </button>
           )}
 
-          <button onClick={handleSmartClick} className={Experiencecss.btn}>
-            Smart Twigs
-          </button>
+          {job == 'smart' ? (
+            <button
+              onClick={handleSmartClick}
+              className={Experiencecss.btnFocused}
+            >
+              Smart Twigs
+            </button>
+          ) : (
+            <button onClick={handleSmartClick} className={Experiencecss.btn}>
+              Smart Twigs
+            </button>
+          )}
         </ul>
         <ul style={{ maxWidth: '36rem' }} className={Experiencecss.jobList}>
           {job == 'smart' && <ExperienceSmartTwig />}
