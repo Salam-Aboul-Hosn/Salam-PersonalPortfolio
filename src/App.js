@@ -6,9 +6,9 @@ import Icons from './components/Icons';
 import Experience from './components/Experience';
 import Projects from './components/Projects';
 import Contact from './components/Contact';
-import MoreProjects from './components/MoreProjects';
-import { Scrollbars } from 'react-custom-scrollbars-2';
 import { useState, useEffect } from 'react';
+import { inject } from '@vercel/analytics';
+
 function App() {
   const [isSmallScreen, setIsSmallScreen] = useState(true);
 
@@ -25,6 +25,7 @@ function App() {
       window.removeEventListener('resize', handleResize);
     };
   }, []);
+  inject();
   return (
     <div className='App'>
       <div style={{ height: '100vh' }}>
