@@ -7,16 +7,16 @@ function About() {
       <div className={Aboutcss.grid}>
         <div className={Aboutcss.flexItemData}>
           <p className={Aboutcss.info}>
-            Hey, my name is Salam Aboul Hosn. I am currently a third year
-            student at the University Of California, San Diego studying
-            Mathematics and Computer Science. I have taken a variety of courses
+            Hey, my name is Salam Aboul Hosn. I'm a
+            UC San Diego graduate with a degree in 
+            Mathematics-Computer Science. I've taken a variety of courses
             such as advanced data structures, design & analysis of algorithms,
             and object oriented programming allowing me to learn{' '}
             <strong className={Aboutcss.word}>
               Java<span>,</span> C<span>, </span>
               <span style={{ fontWeight: 300 }}>and</span> C++.
             </strong>{' '}
-            I am an extremely self motivated individual and self taught{' '}
+            I'm an extremely self motivated individual and self taught{' '}
             <strong className={Aboutcss.word}>
               HTML<span>,</span> CSS<span>,</span> JavaScript<span>,</span>{' '}
               React<span>,</span> Express
@@ -24,8 +24,8 @@ function About() {
             , and <strong className={Aboutcss.word}>MongoDB </strong>
             by taking online courses with certification and building projects. I
             have 5 months worth of professional experience as a front end
-            developer in React & TypeScript for Smart Twigs Consultancy Group
-            building a full stack web app.
+            developer using React & TypeScript for Smart Twigs Consultancy Group. As well as 5 months worth of professional experience as a full stack developer
+            using <strong className={Aboutcss.word}>React</strong>, <strong className={Aboutcss.word}>Java</strong>, and <strong className={Aboutcss.word}>MySQL</strong> for MyMicrojourney.
           </p>
         </div>
         <div className={Aboutcss.flexItemImg}>

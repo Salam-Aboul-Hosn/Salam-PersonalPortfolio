@@ -10,10 +10,10 @@ export function ExperienceSmartTwig() {
         awareness of current issues.
       </li>
       <li className={Experiencecss.jobDescription}>
-        Created custom components increasing developer speed by 60%.{' '}
-      </li>
+      Created reusable React components, enhancing design uniformity and accelerating development.
+            </li>
       <li className={Experiencecss.jobDescription}>
-        Built complex forms in order for users to create organization, programs,
+        Built complex forms in order for users to create organizations, programs,
         and projects.
       </li>
       <li className={Experiencecss.jobDescription}>
@@ -30,19 +30,16 @@ export function ExperiencePending() {
       <h2 className={Experiencecss.jobNameHeader}>MyMicrojourney</h2>
       <p className={Experiencecss.jobDate}>Oct - Feb 2024</p>
       <li className={Experiencecss.jobDescription}>
-        Built a Rest API using Java Spring Boot and utilized MySQL to store user
-        data.
+      Built a Rest API using Java Spring Boot and utilized MySQL to store user data.
       </li>
       <li className={Experiencecss.jobDescription}>
-        Used Spring Security to hash passwords increasing security by 70%.
+      Developed landing pages, components, and forms using React completing 100% of the front end.
       </li>
       <li className={Experiencecss.jobDescription}>
-        Developed landing pages, components, and forms using Next.js completing
-        100% of the front end.
+      Utilized Spring Security to perform a one way hash for passwords, increasing data security.
       </li>
       <li className={Experiencecss.jobDescription}>
-        Created microservices, controllers, and data models to fulfill back-end
-        functionality.
+      Used Spring JPA to define data models and created User & Email services for sign up functionality.
       </li>
     </div>
   );
