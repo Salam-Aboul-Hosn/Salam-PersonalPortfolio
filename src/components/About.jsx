@@ -1,5 +1,7 @@
 import Aboutcss from '../styles/components/About.module.css';
 import imageOfMe from '../images/self.jpeg';
+import imageOfMe2 from '../images/linkedinheadshot.jpeg';
+
 function About() {
   return (
     <section className='section' id='About'>
@@ -7,11 +9,10 @@ function About() {
       <div className={Aboutcss.grid}>
         <div className={Aboutcss.flexItemData}>
           <p className={Aboutcss.info}>
-            Hey, my name is Salam Aboul Hosn. I'm a
-            UC San Diego graduate with a degree in 
-            Mathematics-Computer Science. I've taken a variety of courses
-            such as advanced data structures, design & analysis of algorithms,
-            and object oriented programming allowing me to learn{' '}
+            Hey, my name is Salam Aboul Hosn. I'm a UC San Diego graduate with a
+            degree in Mathematics-Computer Science. I've taken a variety of
+            courses such as advanced data structures, design & analysis of
+            algorithms, and object oriented programming allowing me to learn{' '}
             <strong className={Aboutcss.word}>
               Java<span>,</span> C<span>, </span>
               <span style={{ fontWeight: 300 }}>and</span> C++.
@@ -24,17 +25,34 @@ function About() {
             , and <strong className={Aboutcss.word}>MongoDB </strong>
             by taking online courses with certification and building projects. I
             have 5 months worth of professional experience as a front end
-            developer using React & TypeScript for Smart Twigs Consultancy Group. As well as 5 months worth of professional experience as a full stack developer
-            using <strong className={Aboutcss.word}>React</strong>, <strong className={Aboutcss.word}>Java</strong>, and <strong className={Aboutcss.word}>MySQL</strong> for MyMicrojourney.
+            developer using React & TypeScript for Smart Twigs Consultancy
+            Group. As well as 5 months worth of professional experience as a
+            full stack developer using{' '}
+            <strong className={Aboutcss.word}>React</strong>,{' '}
+            <strong className={Aboutcss.word}>Java</strong>, and{' '}
+            <strong className={Aboutcss.word}>MySQL</strong> for MyMicrojourney.
           </p>
         </div>
-        <div className={Aboutcss.flexItemImg}>
+        {/* <div className={Aboutcss.flexItemImg}>
           <a
             href='https://www.linkedin.com/in/salam-aboul-hosn-678a04257/'
             target='blank'
           >
             <img
               src={imageOfMe}
+              alt='Icon'
+              width='300px'
+              className={Aboutcss.image}
+            />
+          </a>
+        </div> */}
+        <div className={Aboutcss.flexItemImg}>
+          <a
+            href='https://www.linkedin.com/in/salam-aboul-hosn-678a04257/'
+            target='blank'
+          >
+            <img
+              src={imageOfMe2}
               alt='Icon'
               width='300px'
               className={Aboutcss.image}
