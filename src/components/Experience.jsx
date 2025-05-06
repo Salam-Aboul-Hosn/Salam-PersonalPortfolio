@@ -5,9 +5,11 @@ import { useState } from 'react';
 import { createTheme, ThemeProvider } from '@mui/material/styles';
 import { ExperienceSmartTwig } from '../data/ExperienceData';
 import { ExperiencePending } from '../data/ExperienceData';
+import { ExperienceBCP } from '../data/ExperienceData';
+
 function Experience() {
   //what youc an do is have a funciton that updates the style. So the orignal style is display none and then when u click the button u do display block and it can work for all of them
-  const [job, setJob] = useState('mymicrojourney');
+  const [job, setJob] = useState('BCP');
   const [start, setStart] = useState('start');
 
   function handleSmartClick() {
@@ -18,6 +20,12 @@ function Experience() {
     setJob('mymicrojourney');
     setStart('');
   }
+
+  function handleBCPClick() {
+    setJob('BCP');
+    setStart('');
+  }
+
   return (
     <section className='section' id='Experience'>
       <h1 className='header'>Experience</h1>
@@ -26,6 +34,13 @@ function Experience() {
           style={{ listStyleType: 'none' }}
           className={Experiencecss.jobButtonList}
         >
+          {job == 'BCP' ? (
+            <button className={Experiencecss.btnFocused}>BCP</button>
+          ) : (
+            <button onClick={handleBCPClick} className={Experiencecss.btn}>
+              BCP
+            </button>
+          )}
           {job == 'mymicrojourney' ? (
             <button className={Experiencecss.btnFocused}>MyMicrojourney</button>
           ) : (
@@ -50,6 +65,7 @@ function Experience() {
         <ul style={{ maxWidth: '36rem' }} className={Experiencecss.jobList}>
           {job == 'smart' && <ExperienceSmartTwig />}
           {job == 'mymicrojourney' && <ExperiencePending />}
+          {job == 'BCP' && <ExperienceBCP />}
         </ul>
       </div>
     </section>

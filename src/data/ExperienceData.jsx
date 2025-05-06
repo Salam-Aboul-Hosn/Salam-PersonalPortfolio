@@ -1,5 +1,34 @@
 import Experiencecss from '../styles/components/Experience.module.css';
 
+export function ExperienceBCP() {
+  return (
+    <div>
+      <h2 className={Experiencecss.jobNameHeader}>Best Choice Products</h2>
+      <p className={Experiencecss.jobDate}>Sep 2024 - Present</p>
+      <li className={Experiencecss.jobDescription}>
+        Building a Warehouse Management System using Java, Spring Boot, Angular,
+        & Microsoft SQL Server.
+      </li>
+      <li className={Experiencecss.jobDescription}>
+        Redesigned receiving products to allow users to instantly putaway skus
+        from trailers increasing time efficiency by 20% reducing labor costs and
+        driving an increase in company revenue.
+      </li>
+      <li className={Experiencecss.jobDescription}>
+        Deployed a SKU velocity heatmap to production, allowing managers to
+        strategically position high-velocity SKUs near packing and shipping
+        areas, reducing travel time for pickers and significantly speeding up
+        order fulfillment.{' '}
+      </li>
+      <li className={Experiencecss.jobDescription}>
+        Communicated directly with warehouse staff to quickly diagnose and
+        resolve real-time system issues by executing targeted SQL queries,
+        enabling uninterrupted workflow and minimizing operational delays.
+      </li>
+    </div>
+  );
+}
+
 export function ExperienceSmartTwig() {
   return (
     <div>
