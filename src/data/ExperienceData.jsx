@@ -10,20 +10,24 @@ export function ExperienceBCP() {
         & Microsoft SQL Server.
       </li>
       <li className={Experiencecss.jobDescription}>
-        Redesigned receiving products to allow users to instantly putaway skus
-        from trailers increasing time efficiency by 20% reducing labor costs and
-        driving an increase in company revenue.
+        Streamlined product receiving process to enable immediate storage of
+        items from trailers, increasing operational speed by 30% and reducing
+        labor costs.
       </li>
       <li className={Experiencecss.jobDescription}>
-        Deployed a SKU velocity heatmap to production, allowing managers to
-        strategically position high-velocity SKUs near packing and shipping
-        areas, reducing travel time for pickers and significantly speeding up
-        order fulfillment.{' '}
+        Enhanced product placement algorithm to direct workers to wider drop-off
+        areas for identical products, resulting in unloading multiple pallets in
+        a single trip and a 50% reduction in travel time.
       </li>
       <li className={Experiencecss.jobDescription}>
         Communicated directly with warehouse staff to quickly diagnose and
         resolve real-time system issues by executing targeted SQL queries,
         enabling uninterrupted workflow and minimizing operational delays.
+      </li>
+      <li className={Experiencecss.jobDescription}>
+        Deployed a SKU velocity heatmap to production, enabling managers to
+        strategically place high-velocity products near packing and shipping
+        areas, reducing picker travel time and accelerating order fulfillment.
       </li>
     </div>
   );
