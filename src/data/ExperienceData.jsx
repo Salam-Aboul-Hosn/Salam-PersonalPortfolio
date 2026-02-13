@@ -6,8 +6,23 @@ export function ExperienceBCP() {
       <h2 className={Experiencecss.jobNameHeader}>Best Choice Products</h2>
       <p className={Experiencecss.jobDate}>Sep 2024 - Present</p>
       <li className={Experiencecss.jobDescription}>
-        Building a Warehouse Management System using Java, Spring Boot, Angular,
+        Building a Warehouse Management System using Java (Spring Boot), Angular,
         & Microsoft SQL Server.
+      </li>
+      <li className={Experiencecss.jobDescription}>
+        Spearheaded integration of used item workflows into the WMS, preventing a
+        $1M+ annual loss from unprocessed returns and enabling resale that
+        boosted revenue by $800k+ annually.
+      </li>
+      <li className={Experiencecss.jobDescription}>
+        Designed an algorithm to prioritize cycle counting the top 30%
+        highest-velocity storage locations, cutting annual labor costs by $600K
+        year-over-year while ensuring inventory accuracy and eliminating
+        unnecessary counts.
+      </li>
+      <li className={Experiencecss.jobDescription}>
+        Optimized database performance by successfully purging 75M rows of stale
+        data, resulting in a 70% decrease in compute costs saving $36K annually.
       </li>
       <li className={Experiencecss.jobDescription}>
         Streamlined product receiving process to enable immediate storage of
@@ -20,14 +35,9 @@ export function ExperienceBCP() {
         a single trip and a 50% reduction in travel time.
       </li>
       <li className={Experiencecss.jobDescription}>
-        Communicated directly with warehouse staff to quickly diagnose and
-        resolve real-time system issues by executing targeted SQL queries,
-        enabling uninterrupted workflow and minimizing operational delays.
-      </li>
-      <li className={Experiencecss.jobDescription}>
-        Deployed a SKU velocity heatmap to production, enabling managers to
-        strategically place high-velocity products near packing and shipping
-        areas, reducing picker travel time and accelerating order fulfillment.
+        Building Pulse using Golang, Next.js (React, TypeScript), & PostgreSQL
+        to enable real time sales forecasting and profit margin analysis to make
+        data backed pricing decisions and revenue optimization.
       </li>
     </div>
   );
